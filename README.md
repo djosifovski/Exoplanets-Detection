@@ -1,4 +1,9 @@
-### Exoplanets Detection
+# Exoplanets Detection
 
-- Used machine learning models for classification from `scikit-learn` and `mlxtend` libraries to classify astronomical objects detected with NASA's Kepler mission as an exoplanet, or not.
-- The best performing model was Random Forest from `scikit-learn` with F_1 score of 0.996860.
+# Motivation
+
+Exoplanets are planets that can be found outside the Solar System, i.e., they are revolving about other star. It is very difficult to detect planets that are many light years away from Earth because they are relatively small and are a lot fainter compared to the star they are revolving about. In 2009 NASA launched the Kepler space telescope to look for exoplanets. The motivation for this project is according to data collected by the space telescope of the astronomical objects to classify whether the object is an exoplanet or not. This could be another tool that astronomers use to verify if they have observed a new exoplanet.
+
+# Methodology
+
+This is a binary classification type of problem in which a subset of learning algoritms were trained from `scikit-learn`, and stacking classifier with cross-validation from `mlxtend`. As a single number evaluation metric F_1 is used, and after fine-tuning the models, the most optimal model is Random Forest where F_1=0.996860.
